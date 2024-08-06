@@ -96,7 +96,7 @@ const Hero = () => {
         </motion.div>
         <motion.img
           src={profile}
-          className="h-[30vh] w-[30vh] rounded-full md:ml-12" 
+          className="h-[30vh] w-[30vh] rounded-full my-8 md:ml-12"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
