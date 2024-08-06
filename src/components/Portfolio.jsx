@@ -1,39 +1,66 @@
-import project1 from '../assets/projects/project-1.jpg'
-import project2 from '../assets/projects/project-2.jpg'
-import project3 from '../assets/projects/project-3.jpg'
+import project1 from "../assets/projects/noshnow.png";
+import project2 from "../assets/projects/portfolio.png";
+import project3 from "../assets/projects/landing.png";
+import project4 from "../assets/projects/1200x640.webp";
+import project5 from "../assets/projects/1200x640.webp";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaLink } from "react-icons/fa";
 
 const Portfolio = () => {
   const projects = [
     {
-      img: project1, // Add your actual image path here
+      img: project1,
       title: "NoshNow",
       description: `NoshNow is a full-stack web application designed for seamless online food ordering. Utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js), it incorporates secure payment processing through Stripe, and includes JWT for authentication and Multer for file handling.
       ● The admin panel features components for adding food items, listing and removing items, and managing orders with delivery status updates. This project demonstrates proficiency in developing user-friendly interfaces and robust backend systems.`,
-      techStack: "MERN Stack (MongoDB, Express.js, React.js, Node.js), Stripe, JWT, Multer",
+      techStack:
+        "MERN Stack (MongoDB, Express.js, React.js, Node.js), Stripe, JWT, Multer",
       links: {
-        site: "#", // Replace with the actual live link
-        github: "#", // Replace with the actual GitHub link
+        site: "#",
+        github: "#",
       },
     },
     {
-      img: project2, // Add your actual image path here
-      title: "HooBank LandingPage",
+      img: project2,
+      title: "My Portfolio",
+      description: `A portfolio website created using Vite, React, Tailwind CSS, and Framer Motion.
+        ● Showcases my projects and skills with a clean and modern design.
+        ● Utilizes Tailwind CSS for styling and Framer Motion for animations to provide a smooth user experience.`,
+      techStack: "Vite, React, Tailwind CSS, Framer Motion",
+      links: {
+        site: "#",
+        github: "#",
+      },
+    },
+    {
+      img: project3,
+      title: "LandingPage",
       description: `Developed a visually appealing and responsive landing page using React and Tailwind CSS.
-      ● Utilized Tailwind CSS for modern and flexible design, ensuring a consistent and mobile-friendly user experience.`,
+          ● Utilized Tailwind CSS for modern and flexible design, ensuring a consistent and mobile-friendly user experience.`,
       techStack: "React JS, Tailwind CSS",
       links: {
-        site: "#", // Replace with the actual live link
-        github: "#", // Replace with the actual GitHub link
+        site: "#",
+        github: "#",
       },
     },
     {
-      img: project3, // Add your actual image path here
+      img: project4,
       title: "TodoWebApp",
       description: `TodoWebApp is a simple to-do list web application built using Node.js, Express.js, and MongoDB. It allows users to create, read, update, and delete tasks in a user-friendly interface.
-      ● This project serves as a basic example of a web application with CRUD (Create, Read, Update, Delete) functionality.`,
+        ● This project serves as a basic example of a web application with CRUD (Create, Read, Update, Delete) functionality.`,
       techStack: "NodeJS, Express, Mongoose, Ejs",
+      links: {
+        site: "#",
+        github: "#",
+      },
+    },
+    {
+      img: project5, // Add your actual image path here
+      title: "Task Patrol Bot",
+      description: `Task Patrol Bot is a Discord bot designed to automate the verification process for activities or challenges that require participants to post their daily progress, such as "30 Days of Code." It helps keep track of participants' daily contributions and identifies users who are eligible for prizes based on their consistent activity.
+          ● Automates daily progress verification for activities or challenges.
+          ● Keeps track of participants' contributions and identifies eligible users for prizes.`,
+      techStack: "Node.js, Discord.js",
       links: {
         site: "#", // Replace with the actual live link
         github: "#", // Replace with the actual GitHub link
@@ -57,7 +84,8 @@ const Portfolio = () => {
             <img
               src={project.img}
               alt={project.title}
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
+              style={{ width: "400px", height: "300px" }}
             />
           </div>
           <div className="w-full md:w-1/2 p-4 flex flex-col justify-center">
@@ -70,8 +98,7 @@ const Portfolio = () => {
               {project.links.site && (
                 <a
                   href={project.links.site}
-                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
-                                      transition duration-300 flex items-center"
+                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300 flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -82,8 +109,7 @@ const Portfolio = () => {
               {project.links.github && (
                 <a
                   href={project.links.github}
-                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
-                                      transition duration-300 flex items-center"
+                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300 flex items-center"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
