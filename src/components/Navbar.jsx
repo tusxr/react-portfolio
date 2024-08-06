@@ -1,11 +1,12 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [bar, setBar] = useState(false);
   const barHandler = () => setBar(!bar);
   return (
-    <nav className="h-[80px] fixed w-full flex items-center justify-between px-4 py-6 text-gray-300 bg-[#0a192f]">
+    <nav className="h-[80px] w-full flex items-center justify-between px-4 py-6 text-gray-300 bg-[#0a192f]">
       <div className="flex flex-shrink-0 items-center">
         <img src={logo} alt="Logo" style={{ width: "50px" }} />
       </div>
@@ -18,7 +19,7 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Screen  */}
-      <div onClick={barHandler} className="md:hidden z-10">
+      <div onClick={barHandler} className="md:hidden z-40">
         {!bar ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -26,7 +27,7 @@ const Navbar = () => {
         className={
           !bar
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "z-30 absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
         <li className="py-5 text-2xl">Home</li>
