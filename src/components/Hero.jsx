@@ -2,11 +2,12 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import profile from "../assets/profile.jpeg";
 
 const Hero = () => {
   return (
     <div className="mt-24 max-w-[1200px] mx-auto relative px-4 md:px-0">
-      <div className="grid md:grid-cols-2 place-items-center gap">
+      <div className="grid md:grid-cols-2 place-items-center gap-6">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +28,7 @@ const Hero = () => {
             ]}
             speed={50}
             repeat={Infinity}
-            className="font-bold text-gray-600 text-xl md:text-5xl italic mb-4"
+            className="font-bold text-gray-600 text-xl md:text-5xl italic mb-4 whitespace-nowrap"
           />
           <motion.p
             initial={{ opacity: 0 }}
@@ -69,24 +70,38 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 href="https://www.github.com/sxxaq"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithub />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 href="https://www.linkedin.com/in/saalim-aqueel/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 href="https://www.twitter.com/__saalim"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaTwitter />
               </motion.a>
             </div>
           </motion.div>
         </motion.div>
+        <motion.img
+          src={profile}
+          className="h-[30vh] w-[30vh] rounded-full md:ml-12" 
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+        />
       </div>
     </div>
   );

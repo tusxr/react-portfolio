@@ -10,7 +10,8 @@
 @layer base {
   body {
     @apply bg-[#0a192f];
-    @apply p-4
+    @apply p-4;
+    @apply m-0;
   }
   li {
     @apply px-4;

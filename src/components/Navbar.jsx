@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [bar, setBar] = useState(false);
   const barHandler = () => setBar(!bar);
@@ -22,7 +22,6 @@ const Navbar = () => {
       <div onClick={barHandler} className="md:hidden z-40">
         {!bar ? <FaBars /> : <FaTimes />}
       </div>
-
       <ul
         className={
           !bar
