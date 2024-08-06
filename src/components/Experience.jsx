@@ -6,7 +6,7 @@ const experiences = [
     company: "Social Winter of Code",
     period: "Jan 2023 - Mar 2023",
     description:
-      "Contributor to various repositories on frontend projects which includes bug fixes, new features, UI/UX improvements, etc.",
+      "Contributor to Frontend repositories during this open source event.",
   },
   {
     company: "Hacktoberfest",
