@@ -5,7 +5,7 @@ import profile from "../assets/profile.jpeg";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto relative px-4 md:px-0">
+    <div className="mt-16 max-w-[1200px] mx-auto relative px-4 md:px-0">
       <div className="grid md:grid-cols-2 place-items-center gap-6">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -97,7 +97,7 @@ const Hero = () => {
         </motion.div>
         <motion.img
           src={profile}
-          className="h-[34vh] w-[34vh] rounded-full my-8 md:ml-16"
+          className=" h-[34vh] w-[34vh] rounded-full mt-12 mb-8 md:ml-16"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
