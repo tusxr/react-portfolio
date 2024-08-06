@@ -1,4 +1,3 @@
-import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -57,15 +56,17 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex items-center gap-4 my-4 md:mb-0"
           >
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 0px 8px rgba(0,0,0,0.3)",
-              }}
-              className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border rounded-xl border-blue-400"
-            >
-              Download CV
-            </motion.button>
+            <a href="https://drive.google.com/file/d/1TMS7frTJQ3aVzc11oKcVE7Av-5T3E1PY/view?usp=sharing">
+              <motion.button
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0px 0px 8px rgba(0,0,0,0.3)",
+                }}
+                className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border rounded-xl border-blue-400"
+              >
+                Download CV
+              </motion.button>
+            </a>
             <div className="flex gap-4 flex-row text-4xl md:text-6xl text-blue-400 z-20">
               <motion.a
                 whileHover={{ scale: 1.05 }}
@@ -96,7 +97,7 @@ const Hero = () => {
         </motion.div>
         <motion.img
           src={profile}
-          className="h-[30vh] w-[30vh] rounded-full my-8 md:ml-12"
+          className="h-[34vh] w-[34vh] rounded-full my-8 md:ml-16"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
