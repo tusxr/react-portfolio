@@ -1,19 +1,19 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo_1.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [bar, setBar] = useState(false);
   const barHandler = () => setBar(!bar);
   return (
-    <nav className="h-[80px] w-full flex items-center justify-between px-4 py-6 text-gray-300 bg-[#0a192f]">
-      <div className="flex flex-shrink-0 items-center">
+    <nav className="h-[80px] w-full flex items-center justify-between px-8 md:px-10 py-6 text-gray-300 bg-[#0a192f]">
+      <div className="flex flex-shrink-0 items-center md:ml-20">
         <a href="/">
-          <img src={logo} alt="Logo" style={{ width: "50px" }} />
+          <img src={logo} alt="Logo" style={{ width: "40px" }} />
         </a>
       </div>
 
-      <ul className=" hidden md:flex">
+      <ul className=" hidden md:flex md:mr-10">
         <a href="/">
           <li>Home</li>
         </a>
