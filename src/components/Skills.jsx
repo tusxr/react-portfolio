@@ -92,7 +92,7 @@ const Skills = () => {
       className="px-6 my-[50px] text-gray-200 pb-8 md:py-12"
       id="skills"
     >
-      <h2 className="text-3xl font-bold mb-8 text-center w-full">Skills</h2>
+      <h2 className="text-3xl text-gray-200 font-bold mb-8 text-center w-full">Skills</h2>
 
       <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row justify-center space-y-8 md:space-x-8 md:space-y-0">
         {skills.map((skill, index) => (
