@@ -3,6 +3,7 @@ import project2 from "../assets/projects/portfolio.png";
 import project3 from "../assets/projects/landing.png";
 import project4 from "../assets/projects/1200x640.webp";
 import project5 from "../assets/projects/1200x640.webp";
+import project6 from "../assets/projects/flappy.png";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaLink } from "react-icons/fa";
 
@@ -16,8 +17,8 @@ const Portfolio = () => {
       techStack:
         "MERN Stack (MongoDB, Express.js, React.js, Node.js), Stripe, JWT, Multer",
       links: {
-        site: "#",
-        github: "#",
+        site: "https://noshnow-frontend.onrender.com/",
+        github: "https://github.com/SxxAq/NoshNow",
       },
     },
     {
@@ -28,8 +29,8 @@ const Portfolio = () => {
         ● Utilizes Tailwind CSS for styling and Framer Motion for animations to provide a smooth user experience.`,
       techStack: "Vite, React, Tailwind CSS, Framer Motion",
       links: {
-        site: "#",
-        github: "#",
+        site: "https://portfolio-mu-pearl-85.vercel.app/",
+        github: "https://github.com/SxxAq/react-portfolio",
       },
     },
     {
@@ -39,8 +40,8 @@ const Portfolio = () => {
           ● Utilized Tailwind CSS for modern and flexible design, ensuring a consistent and mobile-friendly user experience.`,
       techStack: "React JS, Tailwind CSS",
       links: {
-        site: "#",
-        github: "#",
+        site: "https://react-landing-page-smoky.vercel.app/",
+        github: "https://github.com/SxxAq/React-LandingPage",
       },
     },
     {
@@ -51,19 +52,30 @@ const Portfolio = () => {
       techStack: "NodeJS, Express, Mongoose, Ejs",
       links: {
         site: "#",
-        github: "#",
+        github: "https://github.com/SxxAq/TodoWebApp",
       },
     },
     {
-      img: project5, // Add your actual image path here
+      img: project5,
       title: "Task Patrol Bot",
       description: `Task Patrol Bot is a Discord bot designed to automate the verification process for activities or challenges that require participants to post their daily progress, such as "30 Days of Code." It helps keep track of participants' daily contributions and identifies users who are eligible for prizes based on their consistent activity.
           ● Automates daily progress verification for activities or challenges.
           ● Keeps track of participants' contributions and identifies eligible users for prizes.`,
       techStack: "Node.js, Discord.js",
       links: {
-        site: "#", // Replace with the actual live link
-        github: "#", // Replace with the actual GitHub link
+        site: "#",
+        github: "https://github.com/SxxAq/Discord-bot-automation",
+      },
+    },
+    {
+      img: project6,
+      title: "Flappy Bird Game",
+      description: `A simple Flappy Bird-style game built using HTML5 Canvas and JavaScript.
+            ● This project is a recreation of the classic Flappy Bird game. The player controls a bird, trying to fly between columns of green pipes without hitting them. The game features gravity, collision detection, and a score counter.`,
+      techStack: "HTML, CSS, JavaScript",
+      links: {
+        site: "https://flappy-bird-woad.vercel.app/",
+        github: "https://github.com/SxxAq/Flappy-bird",
       },
     },
   ];
