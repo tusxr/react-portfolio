@@ -20,8 +20,8 @@ const Hero = () => {
               1000,
               "Open Source Contributor",
               1000,
-              "AI Enthusiast",
-              1000,
+              // "AI Enthusiast",
+              // 1000,
               "",
               1000,
             ]}
