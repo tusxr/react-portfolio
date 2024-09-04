@@ -14,21 +14,33 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="text-left"
         >
-          <TypeAnimation
-            sequence={[
-              "FullStack Developer",
-              1000,
-              "Open Source Contributor",
-              1000,
-              // "AI Enthusiast",
-              // 1000,
-              "",
-              1000,
-            ]}
-            speed={50}
-            repeat={Infinity}
-            className="font-bold text-gray-600 text-xl md:text-5xl italic mb-4 whitespace-nowrap"
-          />
+          <motion.div
+            animate={{
+              scale: [1, 1.05, 1],
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 3,
+              ease: "easeInOut",
+              loop: Infinity,
+            }}
+          >
+            <TypeAnimation
+              sequence={[
+                "FullStack Developer",
+                1000,
+                "Open Source Contributor",
+                1000,
+                "AI Enthusiast",
+                1000,
+                "",
+                1000,
+              ]}
+              speed={50}
+              repeat={Infinity}
+              className="font-bold text-gray-600 text-xl md:text-4xl italic mb-4 whitespace-nowrap"
+            />
+          </motion.div>
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -56,7 +68,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex items-center gap-4 my-4 md:mb-0"
           >
-            <a href="https://drive.google.com/file/d/1TMS7frTJQ3aVzc11oKcVE7Av-5T3E1PY/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1bUzbJnmRV6bjrMUWzrhOAo0sX7NZp4Jg/view?usp=sharing">
               <motion.button
                 whileHover={{
                   scale: 1.05,
@@ -86,7 +98,7 @@ const Hero = () => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="https://www.twitter.com/__saalim"
+                href="https://www.twitter.com/__0xSaalim"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -97,7 +109,7 @@ const Hero = () => {
         </motion.div>
         <motion.img
           src={profile}
-          className=" h-[34vh] w-[34vh] rounded-full mt-12 mb-8 md:ml-16"
+          className=" h-[34vh] w-[34vh] rounded-full mt-12 mb-8 md:ml-24"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}

@@ -9,10 +9,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Skills />
-      <Portfolio />
-      <Experience />
+      <div className="p-4">
+        <Hero />
+        <Skills />
+        <Portfolio />
+        <Experience />
+      </div>
       <Contact />
     </>
   );
