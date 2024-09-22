@@ -1,13 +1,58 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { AiOutlineGithub } from "react-icons/ai";
+import { FaLink } from "react-icons/fa";
+
 import project1 from "../assets/projects/noshnow.png";
 import project2 from "../assets/projects/textify.png";
 import project3 from "../assets/projects/portfolio.png";
 import project4 from "../assets/projects/1200x640.webp";
 import project5 from "../assets/projects/1200x640.webp";
 import project6 from "../assets/projects/flappy.png";
-import { AiOutlineGithub } from "react-icons/ai";
-import { FaLink } from "react-icons/fa";
 
-const Portfolio = () => {
+const ProjectCard = ({ project }) => (
+  <motion.div
+    whileHover={{ y: -5 }}
+    className="bg-gray-800 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl"
+  >
+    <img src={project.img} alt={project.title} className="w-full h-48 object-cover" />
+    <div className="p-6">
+      <h3 className="text-xl font-semibold text-teal-300 mb-2">{project.title}</h3>
+      <p className="text-gray-400 text-sm mb-4">{project.techStack}</p>
+      <ul className="text-gray-300 text-sm mb-4 list-disc list-inside">
+        {project.description.map((item, index) => (
+          <li key={index} className="mb-1">{item}</li>
+        ))}
+      </ul>
+      <div className="flex space-x-4 mt-4">
+        {project.links.site && (
+          <a
+            href={project.links.site}
+            className="px-4 py-2 bg-teal-500 text-white font-bold text-sm rounded-lg hover:bg-teal-600 transition duration-300 flex items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLink className="mr-2" />
+            Live Demo
+          </a>
+        )}
+        {project.links.github && (
+          <a
+            href={project.links.github}
+            className="px-4 py-2 bg-gray-700 text-gray-300 font-bold text-sm rounded-lg hover:bg-gray-600 transition duration-300 flex items-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineGithub className="mr-2" />
+            GitHub
+          </a>
+        )}
+      </div>
+    </div>
+  </motion.div>
+);
+
+const Projects = () => {
   const projects = [
     {
       img: project1,
@@ -31,8 +76,7 @@ const Portfolio = () => {
         "Focuses on accuracy and ease of use for professionals and students",
         "Simplifies converting interviews, lectures, and voice notes",
       ],
-      techStack:
-        "React, Tailwind CSS, JavaScript, Xenova/Whisper API, Web Workers",
+      techStack: "React, Tailwind CSS, JavaScript, Xenova/Whisper API, Web Workers",
       links: {
         site: "https://textify-phi.vercel.app/",
         github: "https://github.com/SxxAq/Textify",
@@ -95,67 +139,24 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
-    <h2 className="text-3xl font-bold text-gray-200 mb-8 text-center">
-      Portfolio
-    </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {projects.map((project, index) => (
-        <div
-          key={index}
-          className="bg-slate-800 rounded-xl border-2 border-teal-300 shadow-xl overflow-hidden flex flex-col"
+    <section className="py-16 bg-gray-900" id="projects">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.h2 
+          className="text-4xl font-bold text-center text-white mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
         >
-          <img
-            src={project.img}
-            alt={project.title}
-            className="w-full h-48 object-cover"
-          />
-          <div className="p-4 flex flex-col flex-grow">
-            <div className="flex-grow">
-              <h3 className="text-xl font-semibold text-teal-300 mb-2">
-                {project.title}
-              </h3>
-              <p className="text-slate-400 text-sm whitespace-pre-wrap mb-4">
-                {project.techStack}
-              </p>
-              <ul className="text-gray-300 text-sm mb-4">
-                {project.description.map((item, index) => (
-                  <li key={index} className="mb-1">
-                    • {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex space-x-4 flex-wrap mt-auto">
-              {project.links.site && (
-                <a
-                  href={project.links.site}
-                  className="px-4 py-2 bg-slate-50 text-slate-800 font-bold text-sm rounded-lg hover:bg-slate-400 transition duration-300 flex items-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLink className="mr-2" />
-                  Live
-                </a>
-              )}
-              {project.links.github && (
-                <a
-                  href={project.links.github}
-                  className="px-3 py-2 bg-slate-700 text-gray-300 font-bold text-sm border-2 border-white rounded-lg hover:bg-slate-700 transition duration-300 flex items-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiOutlineGithub className="mr-2" />
-                  GitHub
-                </a>
-              )}
-            </div>
-          </div>
+          My Projects
+        </motion.h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
+      </div>
+    </section>
   );
 };
 
-export default Portfolio;
+export default Projects;
