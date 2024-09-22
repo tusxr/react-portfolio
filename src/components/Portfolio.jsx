@@ -139,7 +139,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-900" id="projects">
+    <section className="py-16 " id="projects">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2 
           className="text-4xl font-bold text-center text-white mb-12"
