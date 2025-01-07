@@ -68,7 +68,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex items-center gap-4 my-4 md:mb-0"
           >
-            <a href="https://drive.google.com/file/d/103bObs6J2bCNTmzVdMRlOSjR2Up-V3qq/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1NzFB2wb1tn8qXlk5YPySDxEYPL3_IHuh/view?usp=sharing">
               <motion.button
                 whileHover={{
                   scale: 1.05,
