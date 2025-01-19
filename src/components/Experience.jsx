@@ -5,14 +5,14 @@ const experiences = [
   {
     company: "Alibhiya Softwares",
     designation : "Junior Frontend Developer",
-    period: "Jan 2023 - Mar 2023",
+    period: "Dec 2022 - Oct 2024",
     description:
       "I developed dynamic and responsive websites using React.js and JavaScript, ensuring high-quality user interfaces and seamless performance. Additionally, I created and managed websites on WordPress, focusing on customization and client requirements.",
   },
   {
     company: "Dope Studios",
     designation : "Freelance Web Developer",
-    period: "Oct 2022 - Ongoing",
+    period: "JAN 2024 - Ongoing",
     description:
       "I work as a freelance web developer, delivering tailored web solutions to clients. My responsibilities include designing, developing, and deploying websites with a focus on modern, user-friendly designs and robust functionality.",
   },
