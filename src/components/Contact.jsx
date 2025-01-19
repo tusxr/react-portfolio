@@ -13,7 +13,7 @@ const Contact = () => {
       </p>
       <div className="flex flex-col md:flex-row items-center gap-6 mb-10">
         <a
-          href="mailto:aqueel192@gmail.com"
+          href="mailto:tusarmanna2003@gmail.com"
           className="px-6 py-3 bg-slate-500 hover:bg-slate-600 rounded-lg flex items-center gap-3 transition duration-300"
         >
           <FaEnvelope className="text-2xl" />
@@ -21,19 +21,19 @@ const Contact = () => {
         </a>
         <div className="flex gap-6">
           <a
-            href="https://www.github.com/sxxaq"
+            href="https://github.com/tusxr"
             className="text-3xl hover:text-gray-400 transition duration-300"
           >
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/saalim-aqueel"
+            href="https://www.linkedin.com/in/tusar-manna-4a44a3239/"
             className="text-3xl hover:text-gray-400 transition duration-300"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://www.twitter.com/__0xSaalim"
+            href="https://x.com/tusar178"
             className="text-3xl hover:text-gray-400 transition duration-300"
           >
             <FaTwitter />
@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
       </div>
       <p className="text-sm text-gray-400">
-        © {new Date().getFullYear()} Saalim Aqueel. All rights reserved.
+        © {new Date().getFullYear()} Tusar Manna. All rights reserved.
       </p>
     </div>
   );

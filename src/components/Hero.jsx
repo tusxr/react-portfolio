@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/profile.png";
 
 const Hero = () => {
   return (
@@ -31,6 +31,8 @@ const Hero = () => {
                 1000,
                 "Open Source Contributor",
                 1000,
+                "Cloud Enthusiast",
+                1000,
                 "AI Enthusiast",
                 1000,
                 "",
@@ -49,7 +51,7 @@ const Hero = () => {
             className="font-bold text-gray-300 text-5xl md:text-7xl tracking-tight mb-4"
           >
             HI, I AM <br />
-            <span className="text-blue-400">SAALIM AQUEEL</span>
+            <span className="text-blue-400">TUSAR MANNA</span>
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -68,7 +70,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex items-center gap-4 my-4 md:mb-0"
           >
-            <a href="https://drive.google.com/file/d/1NzFB2wb1tn8qXlk5YPySDxEYPL3_IHuh/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1o7RjKmtpDE0JD0ipf_oLWpqHsz_eCE9i/view?usp=sharing">
               <motion.button
                 whileHover={{
                   scale: 1.05,
@@ -82,7 +84,7 @@ const Hero = () => {
             <div className="flex gap-4 flex-row text-4xl md:text-6xl text-blue-400 z-20">
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="https://www.github.com/sxxaq"
+                href="https://github.com/tusxr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -90,7 +92,7 @@ const Hero = () => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="https://www.linkedin.com/in/saalim-aqueel/"
+                href="https://www.linkedin.com/in/tusar-manna-4a44a3239/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -98,7 +100,7 @@ const Hero = () => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.05 }}
-                href="https://www.twitter.com/__0xSaalim"
+                href="https://x.com/tusar178"
                 target="_blank"
                 rel="noopener noreferrer"
               >

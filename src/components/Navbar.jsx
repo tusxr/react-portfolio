@@ -8,10 +8,10 @@ const Navbar = () => {
   const barHandler = () => setBar(!bar);
 
   return (
-    <nav className="md:h-[80px] w-full flex items-center justify-between px-8 rounded-b-lg md:px-10 py-6 text-gray-200 bg-[#0a192f]">
+    <nav className="md:h-[80px] w-full flex items-center justify-between px-8 rounded-b-lg md:px-10 py-6 text-gray-200 bg-[#121212]">
       <div className="flex flex-shrink-0 items-center md:ml-20">
         <a href="/">
-          <img src={logo} alt="Logo" style={{ width: "40px" }} />
+          <img src={logo} alt="Logo" style={{ width: "100px" }} />
         </a>
       </div>
       <ul className=" hidden md:flex md:mr-10">

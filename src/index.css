@@ -9,7 +9,7 @@
 
 @layer base {
   body {
-    @apply bg-[#0a192f];
+    @apply bg-[#121212];
     @apply m-0;
   }
   li {
