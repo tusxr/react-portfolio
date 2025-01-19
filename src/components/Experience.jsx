@@ -12,7 +12,7 @@ const experiences = [
   {
     company: "Dope Studios",
     designation : "Freelance Web Developer",
-    period: "JAN 2024 - Ongoing",
+    period: "Jan 2024 - Ongoing",
     description:
       "I work as a freelance web developer, delivering tailored web solutions to clients. My responsibilities include designing, developing, and deploying websites with a focus on modern, user-friendly designs and robust functionality.",
   },
