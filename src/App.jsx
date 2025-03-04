@@ -13,7 +13,7 @@ function App() {
       <div className="p-4">
         <Hero />
         <Skills />
-        <Portfolio />
+{/*         <Portfolio /> */}
         <FreelanceWorks/>
         <Experience />
         
