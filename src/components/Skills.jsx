@@ -20,7 +20,7 @@ const Skills = () => {
     {
       category: "Languages",
       technologies: [
-        { name: "C/C++", icon: <FaCode className="text-blue-500 text-4xl" /> },
+        { name: "Java", icon: <FaJava  className="text-blue-500 text-4xl" /> },
         {
           name: "JavaScript",
           icon: <DiJavascript1 className="text-yellow-500 text-4xl" />,
