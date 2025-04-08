@@ -7,7 +7,7 @@ import {
   DiMongodb,
   DiGithubBadge,
 } from "react-icons/di";
-import { FaDatabase, FaCode, FaGit, FaCloud } from "react-icons/fa";
+import { FaDatabase, FaCode, FaGit, FaCloud, FaJava} from "react-icons/fa";
 import {
   SiExpress,
   SiNextdotjs,
