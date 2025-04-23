@@ -54,34 +54,22 @@ const ProjectCard = ({ project }) => (
 
 const Projects = () => {
   const projects = [
-    {
-      img: project1,
-      title: "NoshNow",
-      description: [
-        "Full-stack web application for online food ordering",
-        "Utilizes MERN stack with Stripe, JWT, and Multer",
-        "Admin panel for managing menu and orders",
-      ],
-      techStack: "MERN, Stripe, JWT, Multer",
-      links: {
-        site: "https://noshnow-frontend.onrender.com/",
-        github: "https://github.com/SxxAq/NoshNow",
-      },
-    },
+    
     {
       img: project2,
       title: "Textify",
       description: [
-        "Web app that quickly transcribes audio into text and translates it",
-        "Focuses on accuracy and ease of use for professionals and students",
-        "Simplifies converting interviews, lectures, and voice notes",
+        "Web app that extracts and processes text from images and PDFs using OCR",
+        "Designed for students and professionals needing fast and accurate text digitization",
+        "Ideal for converting scanned documents, notes, and printed material into editable text",
       ],
-      techStack: "React, Tailwind CSS, JavaScript, Xenova/Whisper API, Web Workers",
+      techStack: "React, Tailwind CSS, JavaScript, Google Cloud Vision API, Node.js",
       links: {
-        site: "https://textify-phi.vercel.app/",
-        github: "https://github.com/SxxAq/Textify",
+        site: "https://textify-three.vercel.app/",
+        github: "https://github.com/tusxr/textify.git",
       },
-    },
+    }
+    ,
     {
       img: project3,
       title: "Portfolio",
@@ -92,48 +80,8 @@ const Projects = () => {
       ],
       techStack: "Vite, React, Tailwind CSS, Framer Motion",
       links: {
-        site: "https://portfolio-mu-pearl-85.vercel.app/",
-        github: "https://github.com/SxxAq/react-portfolio",
-      },
-    },
-    {
-      img: project4,
-      title: "Todo Web App",
-      description: [
-        "Simple to-do list web application",
-        "Built with Node.js, Express.js, and MongoDB",
-        "CRUD (Create, Read, Update, Delete) functionality",
-      ],
-      techStack: "Node.js, Express, Mongoose, Ejs",
-      links: {
-        github: "https://github.com/SxxAq/TodoWebApp",
-      },
-    },
-    {
-      img: project5,
-      title: "Task Patrol Bot",
-      description: [
-        "Discord bot for automating daily progress verification",
-        "Tracks participants' contributions for activities/challenges",
-        "Identifies eligible users for prizes",
-      ],
-      techStack: "Node.js, Discord.js",
-      links: {
-        github: "https://github.com/SxxAq/Discord-bot-automation",
-      },
-    },
-    {
-      img: project6,
-      title: "Flappy Bird Game",
-      description: [
-        "Classic Flappy Bird-style game",
-        "Built using HTML5 Canvas and JavaScript",
-        "Includes gravity, collision detection, and a score counter",
-      ],
-      techStack: "HTML, CSS, JavaScript",
-      links: {
-        site: "https://flappy-bird-woad.vercel.app/",
-        github: "https://github.com/SxxAq/Flappy-bird",
+        site: "https://tusar-manna.vercel.app/",
+        github: "https://github.com/tusxr/react-portfolio.git",
       },
     },
   ];
@@ -160,3 +108,88 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// const projects = [
+//   {
+//     img: project1,
+//     title: "NoshNow",
+//     description: [
+//       "Full-stack web application for online food ordering",
+//       "Utilizes MERN stack with Stripe, JWT, and Multer",
+//       "Admin panel for managing menu and orders",
+//     ],
+//     techStack: "MERN, Stripe, JWT, Multer",
+//     links: {
+//       site: "https://noshnow-frontend.onrender.com/",
+//       github: "https://github.com/SxxAq/NoshNow",
+//     },
+//   },
+//   {
+//     img: project2,
+//     title: "Textify",
+//     description: [
+//       "Web app that quickly transcribes audio into text and translates it",
+//       "Focuses on accuracy and ease of use for professionals and students",
+//       "Simplifies converting interviews, lectures, and voice notes",
+//     ],
+//     techStack: "React, Tailwind CSS, JavaScript, Xenova/Whisper API, Web Workers",
+//     links: {
+//       site: "https://textify-phi.vercel.app/",
+//       github: "https://github.com/SxxAq/Textify",
+//     },
+//   },
+//   {
+//     img: project3,
+//     title: "Portfolio",
+//     description: [
+//       "Showcases my projects and skills with a clean, modern design",
+//       "Utilizes Tailwind CSS for responsive styling",
+//       "Incorporates Framer Motion for smooth animations",
+//     ],
+//     techStack: "Vite, React, Tailwind CSS, Framer Motion",
+//     links: {
+//       site: "https://portfolio-mu-pearl-85.vercel.app/",
+//       github: "https://github.com/SxxAq/react-portfolio",
+//     },
+//   },
+//   {
+//     img: project4,
+//     title: "Todo Web App",
+//     description: [
+//       "Simple to-do list web application",
+//       "Built with Node.js, Express.js, and MongoDB",
+//       "CRUD (Create, Read, Update, Delete) functionality",
+//     ],
+//     techStack: "Node.js, Express, Mongoose, Ejs",
+//     links: {
+//       github: "https://github.com/SxxAq/TodoWebApp",
+//     },
+//   },
+//   {
+//     img: project5,
+//     title: "Task Patrol Bot",
+//     description: [
+//       "Discord bot for automating daily progress verification",
+//       "Tracks participants' contributions for activities/challenges",
+//       "Identifies eligible users for prizes",
+//     ],
+//     techStack: "Node.js, Discord.js",
+//     links: {
+//       github: "https://github.com/SxxAq/Discord-bot-automation",
+//     },
+//   },
+//   {
+//     img: project6,
+//     title: "Flappy Bird Game",
+//     description: [
+//       "Classic Flappy Bird-style game",
+//       "Built using HTML5 Canvas and JavaScript",
+//       "Includes gravity, collision detection, and a score counter",
+//     ],
+//     techStack: "HTML, CSS, JavaScript",
+//     links: {
+//       site: "https://flappy-bird-woad.vercel.app/",
+//       github: "https://github.com/SxxAq/Flappy-bird",
+//     },
+//   },
+// ];
